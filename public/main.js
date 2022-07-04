@@ -43,10 +43,11 @@ buttonMensajes.addEventListener('click',(e) => {
             mail: mail,
             texto: texto,
             fecha:fecha,
-            autor:{
+            autores:{
                 nombre: nombre,
                 apellido: apellido,
                 edad: edad,
+                mail:mail
             }
         }
         console.log(fecha)
