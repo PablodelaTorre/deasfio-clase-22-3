@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { mensajesDao as api } from '../daos/index.js';
+import { mensajes } from '../servidor.js';
 const router = Router()
 
 
@@ -14,7 +15,7 @@ function adminOrClient(req,res,next){
 }
 
 router.get('/', async (req,res) => {
-    const products = await api.findAll()
+    const messages = await api.findAll()
     res.json(products)
 })
 

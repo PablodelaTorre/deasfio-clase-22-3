@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import config from "../dataBases/configDB"
+import config from "../dataBases/configDB.js"
 
 mongoose.connect(config.mongoDb.URL, config.mongoDb.options)
 
@@ -35,7 +35,7 @@ class MongoClass{
         }
     }
 
-    async actualizarP(id,product){
+    async updateP(id,product){
         try {
             const deleteProduct = await this.collection.deleteOne({_id:id})
             const newProduct = await this.collection.create(product)

@@ -5,10 +5,10 @@ let mensajesDao
 
 switch (process.env.DB_CONNECTION) {
     case 'mongoDB':
-        import('./productos/MongoDBProductos.js').then(({MongoDBProductos})=>{
+        import('./MongoDBProductos.js').then(({MongoDBProductos})=>{
             productosDao = new MongoDBProductos();
         })
-        import('./mensajes/MongoDBMensajes.js').then(({MongoDBMensajes})=>{
+        import('./MongoDBMensajes.js').then(({MongoDBMensajes})=>{
             mensajesDao = new MongoDBMensajes();
         })
     }

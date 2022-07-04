@@ -1,10 +1,5 @@
-import mongoose from "mongoose";
-import MongoClass from "../contenedores/mongoClass";
-import { mensajes } from "../servidor";
-
-const schemaMensajes = new mongoose.schema({
-    mensajes
-})
+import MongoClass from "../contenedores/MongoClass.js";
+import { schemaMensajes } from "../models/mensajesSchema.js";
 
 export class MongoDBMensajes extends MongoClass {
     constructor(){

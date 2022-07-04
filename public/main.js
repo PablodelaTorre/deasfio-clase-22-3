@@ -8,6 +8,9 @@ const button = document.getElementById("button")
 const tablaProducts = document.getElementById("tablaP")
 
 const inputMail = document.getElementById("mail")
+const inputName = document.getElementById("nombre")
+const inputApellido = document.getElementById("apellido")
+const inputEdad = document.getElementById("edad")
 const inputMensaje = document.getElementById("mensaje")
 const mostrarMensajes = document.getElementById("nuevosMensajes")
 const buttonMensajes = document.getElementById("buttonMensajes")
@@ -32,11 +35,19 @@ buttonMensajes.addEventListener('click',(e) => {
         let date = new Date()
         const fecha = [date.getDay(),date.getMonth(),date.getFullYear(),date.getHours(),date.getMinutes(),date.getSeconds()]
         const mail = inputMail.value
+        const nombre = inputName.value
+        const apellido = inputApellido.value
+        const edad = inputEdad.value
         const texto = inputMensaje.value
         const mensaje = {
             mail: mail,
             texto: texto,
-            fecha:fecha
+            fecha:fecha,
+            autor:{
+                nombre: nombre,
+                apellido: apellido,
+                edad: edad,
+            }
         }
         console.log(fecha)
         console.log(mensaje)

@@ -12,12 +12,12 @@
     "multer": "^1.4.4",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.16",
+    "normalizr": "^3.6.2",
     "socket.io": "^4.5.1",
     "sqlite3": "^5.0.8"
   },
   "name": "pablo-de-la-torre-desafio-clase-22-2",
   "version": "1.0.0",
-  "description": "",
   "main": "servidor.js",
   "type": "module",
   "scripts": {
@@ -26,5 +26,17 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PablodelaTorre/deasfio-clase-22-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PablodelaTorre/deasfio-clase-22-3/issues"
+  },
+  "homepage": "https://github.com/PablodelaTorre/deasfio-clase-22-3#readme",
+  "description": ""
 }
