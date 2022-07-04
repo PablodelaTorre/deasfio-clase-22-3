@@ -47,7 +47,7 @@ buttonMensajes.addEventListener('click',(e) => {
                 nombre: nombre,
                 apellido: apellido,
                 edad: edad,
-                mail:mail
+                id:mail
             }
         }
         console.log(fecha)
