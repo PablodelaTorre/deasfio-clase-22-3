@@ -1,9 +1,12 @@
 import 'dotenv/config'
 
+const MONGO_USER = process.env.MONGO_USER
+const MONGO_PASS = process.env.MONGO_PASS
+const DB_NAME = process.env.DB_NAME
 
 export default {
     mongoDb:{
-        URL: "mongodb+srv://pablo:pablo@cluster0.krjoq.mongodb.net/ecommerce?retryWrites=true&w=majority",
+        URL: `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@cluster0.krjoq.mongodb.net/${DB_NAME}?retryWrites=true&w=majority"`,
         options:{
             useNewUrlParser:true,
             useUnifiedTopology:true

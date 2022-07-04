@@ -35,7 +35,7 @@ app.get('/',(req,res) => {
 
 export const productos = []
 
-const mensajes = []
+export const mensajes = []
 
 io.on('connection',(socket)=>{
     console.log('nuevo cliente conectado', socket.id)
